@@ -1,0 +1,24 @@
+Caso de Teste 1:
+Moedas: {1, 2, 5, 10, 20, 50, 100, 200, 500}
+Valor: 7
+Resultado esperado: 2 moedas (1 moeda de 2 e 1 moeda de 5)
+
+Caso de Teste 2:
+Moedas: {1, 3, 4}
+Valor: 6
+Resultado esperado: 2 moedas (usando 2 moedas de 3)
+Método guloso daria: 3 moedas (1 moeda de 4 e 2 moedas de 1)
+
+Caso de Teste 3:
+Moedas: {1, 3, 5}
+Valor: 13
+Resultado esperado: 3 moedas (2 moedas de 5 e 1 moeda de 3)
+Método guloso daria: 5 moedas (2 moedas de 5 e 3 moedas de 1)
+
+Explicação:
+- No primeiro caso, o método guloso funciona corretamente porque o sistema de moedas é canônico.
+- No segundo caso, o método guloso falha porque escolhe primeiro a moeda de 4, quando a solução ótima seria usar duas moedas de 3.
+- No terceiro caso, o método guloso também falha ao escolher primeiro a moeda de 5, depois outra de 5, e depois três moedas de 1, quando a solução ótima seria usar duas moedas de 5 e uma de 3.
+
+Análise:
+O método guloso funciona corretamente para sistemas de moedas canônicos, onde cada moeda é pelo menos o dobro da anterior. Em sistemas não canônicos, é necessário usar programação dinâmica ou recursão com memoization para encontrar a solução ótima.

@@ -1,0 +1,42 @@
+Caso de Teste 1:
+Moedas: {2, 3, 5}
+Valor: 9
+
+Solução manual:
+- {2 + 2 + 5} = 9
+- {3 + 3 + 3} = 9
+- {2 + 2 + 2 + 3} = 9
+Total: 3 formas diferentes
+
+Caso de Teste 2:
+Moedas: {1, 2, 5}
+Valor: 10
+
+Solução manual:
+- {1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1} = 10
+- {1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 2} = 10
+- {1 + 1 + 1 + 1 + 1 + 1 + 2 + 2} = 10
+- {1 + 1 + 1 + 1 + 1 + 5} = 10
+- {1 + 1 + 1 + 1 + 2 + 2 + 2} = 10
+- {1 + 1 + 1 + 2 + 5} = 10
+- {1 + 1 + 2 + 2 + 2 + 2} = 10
+- {1 + 2 + 2 + 5} = 10
+- {2 + 2 + 2 + 2 + 2} = 10
+- {5 + 5} = 10
+Total: 10 formas diferentes
+
+Caso de Teste 3:
+Moedas: {1, 3, 4, 5}
+Valor: 7
+
+Solução manual:
+- {1 + 1 + 1 + 1 + 1 + 1 + 1} = 7
+- {1 + 1 + 1 + 1 + 3} = 7
+- {1 + 1 + 1 + 4} = 7
+- {1 + 1 + 5} = 7
+- {1 + 3 + 3} = 7
+- {3 + 4} = 7
+Total: 6 formas diferentes
+
+Análise de desempenho:
+A solução com programação dinâmica é significativamente mais eficiente que a solução recursiva, especialmente para valores maiores. A memoization também melhora muito o desempenho em relação à recursão pura, mas a programação dinâmica ainda é mais eficiente por evitar a sobrecarga da recursão.
